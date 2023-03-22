@@ -24,7 +24,7 @@ const Nav = () => {
       </div>
 
       <div className='nav'>
-        <img width={100} src={image} alt="" />
+        <img width={120} src={image} alt="" />
 
         <ul className='gnb-list'>
           {
