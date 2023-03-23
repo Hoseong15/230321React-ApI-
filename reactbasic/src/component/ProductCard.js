@@ -4,7 +4,7 @@ import React from 'react'
 const ProductCard = ({menu}) => {
   return (
     <div>
-      <img src={menu?.img} alt="" />
+      <img src={menu?.img} alt=""  width={440}/>
       <div className='choice-item'>{menu.choice == true ? "베스트셀러" : ""}</div>
       <div>{menu.title}</div>
       <div>{menu.price}</div>
