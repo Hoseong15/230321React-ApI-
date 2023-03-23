@@ -5,6 +5,7 @@ import ProductAll from './page/ProductAll';
 import ProductDetail from './page/ProductDetail';
 import Login from './page/Login';
 import Nav from './component/Nav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
