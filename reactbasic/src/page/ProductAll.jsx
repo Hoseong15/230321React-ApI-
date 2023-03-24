@@ -62,6 +62,3 @@ const ProductAll = () => {
 }
 
 export default ProductAll
-
-
-

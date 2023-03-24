@@ -26,11 +26,13 @@ const ProductDetail = () => {
         <Col>
           <img width={500} src={product?.img}/>
         </Col>
+
         <Col>
           <h2>{product?.title}</h2>
           <div>{product?.price}</div>
           <div>사이즈 : {product?.size}</div>
         </Col>
+        
       </Row>
     </Container>
   )

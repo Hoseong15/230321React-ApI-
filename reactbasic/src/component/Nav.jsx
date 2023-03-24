@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import image from '../나이키 로고.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass,  faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { useNavigate } from 'react-router-dom'
-
 
 
 const Nav = () => {
@@ -14,7 +13,24 @@ const Nav = () => {
   const goToLogin = ()=> {
    navigate('/login')
   }
- 
+
+
+  // onkeypress 유저가 키를 눌렀을 때 발생한다.
+  // alt , ctrl, shift, ESC 키에는 onkeypress 먹지 않는다.
+  // Enter(조건문)
+
+  // const [useInput, setUseInput] = useState('');
+
+  // const getValue = (e) => {
+  //   setUseInput(e.target.value)
+  // }
+
+  const search = (e) => {
+    if(e.key === 'Enter') {
+
+    } 
+  }
+
   return (
     <div>
       <div className='login'>
@@ -34,7 +50,7 @@ const Nav = () => {
       </div>
 
       <div className='nav'>
-        <img width={120} src={image} alt="" onClick={() => navigate('/')} />
+        <img width={120} src={image} alt="" onClick={() => navigate('/')}/>
 
         <ul className='gnb-list'>
           {
@@ -49,7 +65,7 @@ const Nav = () => {
         <div className='icon-list'>
           <div className='search-box'>
             <FontAwesomeIcon  className='ic-search' icon={faMagnifyingGlass} />
-            <input type="text" placeholder='검색' />
+            <input type="search" placeholder='검색' onKeyPress={search}/>
           </div>
 
           <div>
@@ -67,4 +83,3 @@ const Nav = () => {
 }
 
 export default Nav
-
