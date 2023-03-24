@@ -160,7 +160,7 @@ li {list-style: none;}
   left: 10%;
   padding: 10px 15px;
 }
-
+/* 
 .login-wrapper{
   display: flex;
   flex-direction: column;
@@ -224,4 +224,4 @@ li {list-style: none;}
   border-radius: 5px;
   border: 1px solid red;
   color: red;
-}
+} */
