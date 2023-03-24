@@ -7,10 +7,10 @@ const ProductCard = ({menu}) => {
   const showDetail = () => {
     navigate(`/product/${menu.id}`)
   }
-  
+
   return (
     <div className='product-card-list' onClick={showDetail}>
-      <img src={menu?.img} alt="" />
+      <img src={menu?.img} alt="" width={430} />
       <div className='card-content-list'>
         <div className='choice-item'>{menu.choice == true ? "베스트셀러" : ""}</div>
         <div>{menu.title}</div>
